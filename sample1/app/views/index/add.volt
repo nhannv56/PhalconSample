@@ -2,13 +2,11 @@
 <div class="page-header">
     <h1>User management</h1>
 </div>
-<table border='1'>
-  {% for user in users %}
-  	<tr>
-  	<td>{{user.id}}</td>
-  	<td>{{link_to("index/show/"~user.id,user.firstname)}}</td>
-  	<td>{{user.lastname}}</td>
-  	</tr>
-  {% endfor %}
+<form method="post" action="add">
+ <label>First name</label>{{text_field("first_name") }}<br/>
+ <label>Last name</label>{{text_field("last_name") }}<br/>
+ <label>Birth day</label> {{date_field("date")}}<br/>
+ {{submit_button("submit")}} {{link_to("/index/index/","Cancel")}}
+</form>
 </table>
 </center>

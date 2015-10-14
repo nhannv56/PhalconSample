@@ -1,11 +1,11 @@
 <div class="page-header">
     <h1>User Detail</h1>
 </div>
-  	<li>
-  	<ul>{{user.id}}</ul>
-  	<ul>{{user.firstname}}</ul>
-  	<ul>{{user.lastname}}</ul>
-  	<ul>{{user.bithday}}</ul>
-  	<ul>{{user.facebook}}</ul>
-  	</li>
+  	<ul>
+  	<li>ID: {{user.id}}</li>
+  	<li>First Name: {{user.firstname}}</li>
+  	<li>Last Name: {{user.lastname}}</li>
+  	<li>Bithday: {{user.bithday}}</li>
+  	<li>Facebook: {{user.facebook}}</li>
+  	</ul>
   	{{ link_to("/index/index","back")}}
