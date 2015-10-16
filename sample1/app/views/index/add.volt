@@ -2,9 +2,22 @@
     <h1>User management</h1>
 </div>
 <form method="post" action="add">
- <label>First name</label>{{text_field("first_name") }}<br/>
- <label>Last name</label>{{text_field("last_name") }}<br/>
- <label>Birth day</label> {{date_field("date")}}<br/>
- {{submit_button("submit")}} {{link_to("/index/index/","Cancel")}}
+	<table>
+	<tr>
+		<td> <label>First name</label> </td>
+		<td> {{text_field("first_name") }} </td>
+	</tr>
+	<tr>
+		<td> <label>Last name</label> </td>
+		<td> {{text_field("last_name") }} </td>
+	</tr>
+	<tr/>
+		<td> <label>Birth day</label> </td>
+		<td> {{date_field("date")}} </td>
+	</tr>
+	<tr>
+		<td>{{submit_button("submit")}} {{link_to("/index/index/","Cancel")}}</td>
+	</tr>
+	</table>
 </form>
 </table>
