@@ -1,4 +1,3 @@
-<center>
 <div class="page-header">
     <h1>User management</h1>
 </div>
@@ -9,4 +8,3 @@
  {{submit_button("submit")}} {{link_to("/index/index/","Cancel")}}
 </form>
 </table>
-</center>

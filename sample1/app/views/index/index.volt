@@ -1,6 +1,5 @@
-<center>
 <div class="page-header">
-    <h1>User management</h1>
+    <h1>List of users</h1>
 </div>
 <table border='1'>
 <tr>
@@ -20,5 +19,4 @@
   	</tr>
   {% endfor %}
 </table>
-{{link_to("/index/add/","new")}}
-</center>
+{{link_to("/index/add/","Add")}}
